@@ -1,0 +1,52 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "piral"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.0.13",
+    "@mui/icons-material": "^5.16.5",
+    "@mui/material": "^5.16.5",
+    "install": "^0.13.0",
+    "npm": "^10.8.2",
+    "piral": "1.6.0",
+    "piral-base": "1.6.0",
+    "piral-core": "1.6.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "scripts": {
+    "start": "piral debug",
+    "build": "piral build",
+    "postinstall": "piral declaration"
+  },
+  "app": "./src/index.html",
+  "types": "dist/index.d.ts",
+  "importmap": {
+    "imports": {
+      "@mui/material": ".",
+      "@mui/icons-material": ".",
+      "@emotion/react": ".",
+      "@emotion/styled": "."
+    },
+    "inherit": [
+      "piral-base",
+      "piral-core",
+      "piral"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "piral-cli": "1.6.0",
+    "piral-cli-webpack5": "1.6.0",
+    "react-router": "^6.25.1",
+    "react-router-dom": "^6.25.1",
+    "typescript": "latest"
+  }
+}
